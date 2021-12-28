@@ -1,0 +1,30 @@
+API toke de pythonanywhere:
+42f271ed306a4887acf2fd2357e8e42e2fed7770
+
+||----------------------------------------------||
+COMANDO UTILES
+lsb_release -a saber la distribución de ubuntu
+
+||----------------------------------------------||
+Crear un proyecto en Django
+
+1 - sudo apt install python3 instalar python3
+2 - mkdir nombre Crear carpeta del proyecto
+3 - python3 -m venv myvenv crear entorno virtual
+	3.1 myenv puede ser reemplazado por cualquier nombre TODO EN MINISCULA SIN CARACTERES ESPECIALES
+	3.2 Nota: Dentro del entorno virtual el comando python solo ya hace referencia a la versión instalada
+4 - source myvenv/bin/activate Para activar el entorno virtual
+5 - python -m pip install --upgrade pip Actualizar el pip
+6 - python -m pip install Django Instalar Django o hacer un requirements.txt con Django~=2.2.4
+	6.1 En el  requirements.txt puede incluir todo lo que necesite instalar
+7 - django-admin startproject mysite . crear el proyecto
+8 - Configurar los settings.py
+9 - python manage.py migrate realizar migraciones
+10 - python manage.py runserver para correr el servidor (se puede especificar un purto)
+11 - python manage.py startapp blog Crear una aplicación. Es bueno ser ordenado con las aplicaciones.
+12 - python manage.py makemigrations blog crear migraciones en una aplicación
+
+|| ----------------------------------------------||
+NOTAS DE ORDEN Y RELEVANCIA
+La regla de nomenclatura es utilizar minúsculas y guiones bajos en lugar de espacios. 
+Por ejemplo, un método que calcule el precio medio se podría llamar calcular_precio_medio
