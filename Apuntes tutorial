@@ -22,9 +22,14 @@ Crear un proyecto en Django
 9 - python manage.py migrate realizar migraciones
 10 - python manage.py runserver para correr el servidor (se puede especificar un purto)
 11 - python manage.py startapp blog Crear una aplicación. Es bueno ser ordenado con las aplicaciones.
-12 - python manage.py makemigrations blog crear migraciones en una aplicación
+12 - python manage.py makemigrations blog crear migraciones en una aplicación crea el modelo
+13 - python manage.py migrate blog migraciones del modelo
+14 - python manage.py createsuperuser crear super usuario
+
 
 || ----------------------------------------------||
 NOTAS DE ORDEN Y RELEVANCIA
 La regla de nomenclatura es utilizar minúsculas y guiones bajos en lugar de espacios. 
 Por ejemplo, un método que calcule el precio medio se podría llamar calcular_precio_medio
+User pythonAnywhere: johnatangomez 
+password: 4416984jG@
